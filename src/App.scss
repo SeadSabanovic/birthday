@@ -12,7 +12,17 @@ body {
   color: #fff;
 }
 
+.container {
+  max-width: 1000px;
+  padding: 3rem 24px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
 .pre-loader {
+  pointer-events: none;
   width: 100vw;
   height: 110vh;
   position: fixed;
@@ -25,4 +35,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 10vh 24px 20vh;
+
+  h1 {
+    font-size: 40vw;
+  }
 }
