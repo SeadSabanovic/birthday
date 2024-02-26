@@ -18,7 +18,7 @@ export default function PreLoader() {
       scale: 0.8,
       rotate: 10,
       textContent: 0,
-      duration: 3,
+      duration: 5,
       ease: "expoScale(0.5,7,none)",
       snap: { textContent: 1 },
       stagger: 1,

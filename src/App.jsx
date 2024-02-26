@@ -1,18 +1,26 @@
 import ReactLenis from "@studio-freight/react-lenis";
 import "./App.scss";
-// import PreLoader from './components/PreLoader'
+import PreLoader from "./components/PreLoader";
+import Land from "./components/Land";
+import Space from "./components/Space";
 
 function App() {
+  let spaces = [
+    {
+      name: "Mama",
+    },
+  ];
+  for (let i = 0; i < 100; i++) {
+    spaces.push(null);
+  }
   return (
     <ReactLenis root>
       {/* <PreLoader /> */}
       <div className="container">
-        <h1>Mali znak pažnje...</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam
-          quia doloribus necessitatibus eum soluta commodi provident distinctio
-          tenetur illo.
-        </p>
+        <Land></Land>
+        {spaces.map((space, index) => (
+          <Space key={index} index={index} space={space} />
+        ))}
       </div>
     </ReactLenis>
   );

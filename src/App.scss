@@ -15,6 +15,7 @@ body {
 .container {
   max-width: 1000px;
   padding: 3rem 24px;
+  min-height: 100svh;
 }
 
 h1 {
@@ -38,5 +39,22 @@ h1 {
 
   h1 {
     font-size: 40vw;
+  }
+}
+
+.landing {
+  min-height: calc(70svh - 6rem);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+}
+
+.space {
+  &:not(:last-of-type) {
+    margin-bottom: 24px;
   }
 }
