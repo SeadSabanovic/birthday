@@ -71,7 +71,7 @@ function App() {
   );
   return (
     <ReactLenis root>
-      {/* <PreLoader /> */}
+      <PreLoader />
       <div className="container">
         <Land></Land>
 
