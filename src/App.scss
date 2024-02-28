@@ -4,6 +4,7 @@ $color__green: #386641;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /* for removing the highlight */
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 }
 
 .container {
-  max-width: 1000px;
   padding: 3rem 24px;
   min-height: 100svh;
 }
@@ -47,14 +47,44 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-  h1 {
-    margin-bottom: 24px;
-  }
+  text-align: center;
 }
 
 .space {
   &:not(:last-of-type) {
     margin-bottom: 24px;
+  }
+
+  &__index {
+    text-transform: uppercase;
+    display: inline-flex;
+    font-size: 1.5rem;
+    font-weight: 900;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.gallery {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  height: 100lvh;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0;
+  background-color: #000;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    height: 100vh;
+    display: block;
   }
 }

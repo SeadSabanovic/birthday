@@ -1,8 +1,7 @@
 export default function Land() {
   return (
     <div className="landing">
-      <h1>Mali znak pažnje...</h1>
-      <p>Hvala ti što si tu!</p>
+      <h1>Za našu Sultaniju</h1>
     </div>
   );
 }
