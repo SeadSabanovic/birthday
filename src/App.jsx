@@ -29,6 +29,10 @@ function App() {
       audio: "audio/lamija.m4a",
     },
     {
+      name: "demir",
+      audio: "audio/demir.m4a",
+    },
+    {
       name: "KOMŠIJE",
       audio: "audio/komsije.m4a",
     },
